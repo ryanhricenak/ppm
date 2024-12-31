@@ -5,6 +5,19 @@
 | 11/23/2024
 */
 
+/*
+| Command line arguments for effects
+| lRotate - rotates the colors to the left (red gets green's values, green gets blue's values, blue gets red's values)
+| rRotate - rotates the colors to the right (red gets blue's values, green gets red's values, blue gets green's values)
+| gray - grayscales the image
+| contrast - increases the contrast scaling of the image
+| negative - creates a negative version of the image
+| flip - rotates the image 180 degrees
+| blur - applies a gaussian mask to the image
+| unsharp - adds a gaussian difference to the image (gaussian difference is found by subtrarctuing the gausian mask from the original image)
+| No argument or any other argument will result in a normal image being copied
+*/
+
 #include<stdio.h>
 #include<ctype.h>
 #include<string.h>
